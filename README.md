@@ -29,7 +29,7 @@ All training was done using kaggle enviroment and Google Colab.
 * Translate indonesian text into english
 * Ensemble two image models trained on two different folds by concatenating embeddings
 * If product have no pair after initial search, increase the threshold and repeat the scan
-* Filter some tf-idf and bert predictions if their image embeddings are far off from image model embeddings
+* Remove some tf-idf and bert predictions if their image embeddings are far off from image model embeddings
 * Combine predictions of three separate models by taking only unique ones
 
 ## What didnt work
