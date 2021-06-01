@@ -1,6 +1,6 @@
 # Shopee-Price-Match-Guarantee
 Here I want to share my soultion for Shopee-Price-Match-Guarantee kaggle competition, which secured me 59 public LB and 64 private LB place. </br>
-The main challenge was to determine if two products belong to the same category(11014 in total) by their images and text descriptions.
+The main challenge was to determine if two products belong to the same category(11014 in total) by their images and text descriptions. To achive that image model and text model were trained using ArcMarginProduct head. While inference its' feature embeddings were extarcted and similar ones were found using cosine similarity.
 
 All data - https://www.kaggle.com/c/shopee-product-matching/data - can be installed via kaggle api. </br>
 shopee_inference.ipynb - python notebook used for inference. </br>
@@ -22,3 +22,8 @@ All training was done using kaggle enviroment and Google Colab.
 * ArcMargin head with scale 30 and margin 0.5
 * Adam optimizer or Ranger optimizer with Mish activation function (same validation score)
 * Cross entropy loss with normilized weights
+
+## Inference
+
+* Apply tf-idf model on text
+* 
